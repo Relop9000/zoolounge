@@ -1,8 +1,9 @@
 const menuItems = {
-  Food: [
-    { id: "21", name: "Meat Lovers", price: "35'0'" },
-    { id: "22", name: "BBQ Chicken", price: "35'0" },
-    { id: "23", name: "Hawaii Pizza", price: "35'0" },
+  Food: [{ id: "1", name: "Mixed meat platter", price: "70'000" }],
+  Pizza: [
+    { id: "21", name: "Meat Lovers", price: "35'000" },
+    { id: "22", name: "BBQ Chicken", price: "35'000" },
+    { id: "23", name: "Hawaii Pizza", price: "35'000" },
   ],
   Coffee: [
     { id: "1", name: "Americano", price: "9'000" },
@@ -15,35 +16,45 @@ const menuItems = {
   "Pot tea": [
     { id: "7", name: "Green Tea", price: "15'000" },
     { id: "8", name: "Fruit Tea", price: "15'000" },
-    { id: "9", name: "Earl Grey", price: "15'000" },
+    { id: "9", name: "Earl Grey", price: "7'500" },
   ],
   Cocktails: [
-    { id: "15", name: "Espresso Martini", price: "25000" },
-    { id: "16", name: "Long Island", price: "27000" },
-    { id: "17", name: "Mojito", price: "25000" },
-    { id: "18", name: "Sex on the Beach", price: "25000" },
-    { id: "19", name: "Tom Collins", price: "25000" },
-    { id: "20", name: "Kamikaze", price: "24000" },
+    { id: "15", name: "Espresso Martini", price: "25'000" },
+    { id: "16", name: "Long Island", price: "27'000" },
+    { id: "17", name: "Mojito", price: "25'000" },
+    { id: "18", name: "Sex on the Beach", price: "25'000" },
+    { id: "19", name: "Tom Collins", price: "25'000" },
+    { id: "20", name: "Kamikaze", price: "24'000" },
   ],
   Beers: [
-    { id: "10", name: "Heineken", price: "15000" },
-    { id: "11", name: "Kaltenberg", price: "17000" },
-    { id: "12", name: "Corona Extra", price: "17000" },
-    { id: "13", name: "Kirin Ichiban", price: "15000" },
-    { id: "14", name: "Harbin", price: "20.0k" },
-    { id: "15", name: "Asahi", price: "15.0k" },
+    { id: "10", name: "Heineken", price: "15'000" },
+    { id: "11", name: "Kaltenberg", price: "17'000" },
+    { id: "12", name: "Corona Extra", price: "17'000" },
+    { id: "13", name: "Kirin Ichiban", price: "15'000" },
+    { id: "14", name: "Harbin", price: "20'000" },
+    { id: "15", name: "Asahi", price: "15'000" },
   ],
   Tequila: [
     {
       id: "14",
       name: "Sierrai tequila",
-      price: "22.0k",
-      bottleprice: "170.0k",
+      price: "22'000",
+      bottleprice: "170'000",
     },
   ],
   Liqueur: [
-    { id: "14", name: "Sierrai tequila", price: "22.0k", bottleprice: "" },
-    { id: "15", name: "Sierrai tequila", price: "22.0k", bottleprice: "" },
+    {
+      id: "14",
+      name: "Bailey's irish cream",
+      price: "17'000",
+      bottleprice: "",
+    },
+    {
+      id: "15",
+      name: "Jagermiester",
+      price: "22'000",
+      bottleprice: "",
+    },
   ],
 };
 
