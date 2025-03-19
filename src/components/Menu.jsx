@@ -1,7 +1,7 @@
 const menuItems = {
   Food: [
     { id: "1", name: "Mixed Meat Platter", price: "70'000" },
-    { id: "2", name: "Fried Chicken And French fries", price: "20'000" },
+    { id: "2", name: "Fried Chicken And French fries", price: "25'000" },
   ],
   Pizza: [
     { id: "21", name: "Meat Lovers", price: "35'000" },
