@@ -90,12 +90,12 @@ const menuItems = {
     { id: "3", name: "Beluga", price: "24'000", bottleprice: "350'000" },
   ],
   Wine: [
-    { id: "1", name: "Domaine de La baume", price: "115'000" },
-    { id: "2", name: "Calvet", price: "105'000" },
-    { id: "3", name: "Maison Castel", price: "105'000" },
-    { id: "4", name: "Kindzmarauli", price: "105'000" },
-    { id: "5", name: "Lous Eschenauer", price: "105'000" },
-    { id: "6", name: "Hardys", price: "105'000" },
+    { id: "1", name: "Domaine de La baume", price: "100'000" },
+    { id: "2", name: "Calvet", price: "90'000" },
+    { id: "3", name: "Maison Castel", price: "95'000" },
+    { id: "4", name: "Kindzmarauli", price: "90'000" },
+    { id: "5", name: "Lous Eschenauer", price: "90'000" },
+    { id: "6", name: "Hardys", price: "90'000" },
   ],
 };
 
