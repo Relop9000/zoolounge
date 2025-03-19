@@ -8,6 +8,10 @@ const menuItems = {
     { id: "22", name: "BBQ Chicken", price: "35'000" },
     { id: "23", name: "Hawaii Pizza", price: "35'000" },
   ],
+  Dessert: [
+    { id: "1", name: "Chocolate Icecream", price: "15'000" },
+    { id: "2", name: "Oreo Icecream", price: "15'000" },
+  ],
   Coffee: [
     { id: "1", name: "Americano", price: "9'000" },
     { id: "2", name: "Cafe Latte", price: "9'500" },
