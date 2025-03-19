@@ -11,19 +11,25 @@ const menuItems = {
   Dessert: [
     { id: "1", name: "Chocolate Icecream", price: "15'000" },
     { id: "2", name: "Oreo Icecream", price: "15'000" },
+    { id: "3", name: "M&M Icecream", price: "15'000" },
+    { id: "4", name: "Marshmellow Icecream", price: "15'000" },
   ],
-  Coffee: [
+  "Coffee & Soft Drinks": [
     { id: "1", name: "Americano", price: "9'000" },
     { id: "2", name: "Cafe Latte", price: "9'500" },
     { id: "3", name: "Vanilla Latte", price: "10'000" },
     { id: "4", name: "Cafe Mocha", price: "10'000" },
     { id: "5", name: "Caramel Latte", price: "10'000" },
     { id: "6", name: "Green Tea Latte", price: "10'500" },
+    { id: "7", name: "Chocolate Milk", price: "8'000" },
+    { id: "8", name: "Sprite", price: "6'000" },
+    { id: "9", name: "Coke", price: "6'000" },
+    { id: "10", name: "Energy drink", price: "6'000" },
   ],
   "Pot tea": [
     { id: "7", name: "Green Tea", price: "15'000" },
     { id: "8", name: "Fruit Tea", price: "15'000" },
-    { id: "9", name: "Earl Grey", price: "7'500" },
+    { id: "9", name: "Earl Grey", price: "15'500" },
   ],
   Cocktails: [
     { id: "15", name: "Espresso Martini", price: "25'000" },
