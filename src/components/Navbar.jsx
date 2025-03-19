@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 
-const navItems = ["Food", "Drinks", "Soft drinks", "Dessert"];
+const navItems = ["Food", "Drinks", "Contact"];
 
 const Navbar = () => {
   // const [isNavVisible, setIsNavVisible] = useState(true);
@@ -46,12 +46,12 @@ const Navbar = () => {
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
-          <h1 className="text-[#636949] font-bold">ZOOLOUNGE</h1>
+          <h1 className="text-[#04753c] font-bold">ZOOLOUNGE</h1>
           {navItems.map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="nav-hover-btn hidden"
+              className="nav-hover-btn"
             >
               {item}
             </a>

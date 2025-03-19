@@ -14,6 +14,7 @@ const MenuItems = {
     { id: "3", name: "M&M Icecream", price: "15'000" },
     { id: "4", name: "Marshmellow Icecream", price: "15'000" },
   ],
+  Drinks: [],
   "Coffee & Soft Drinks": [
     { id: "1", name: "Americano", price: "9'000" },
     { id: "2", name: "Cafe Latte", price: "9'500" },
