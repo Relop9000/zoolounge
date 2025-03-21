@@ -1,6 +1,6 @@
 const MenuItems = {
   Food: {
-    image: "/food.png",
+    image: "/Food.png",
     items: [
       {
         id: "1",
