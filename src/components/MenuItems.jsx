@@ -101,6 +101,11 @@ const MenuItems = {
       price: "10'000",
       img: "",
     },
+    { id: "6", name: "Green Tea Latte", price: "10'500" },
+    { id: "7", name: "Chocolate Milk", price: "8'000" },
+    { id: "8", name: "Sprite", price: "6'000" },
+    { id: "9", name: "Coke", price: "6'000" },
+    { id: "10", name: "Energy drink", price: "6'000" },
   ],
   "Pot tea": [
     {
@@ -141,6 +146,9 @@ const MenuItems = {
       price: "25'000",
       img: "",
     },
+    { id: "18", name: "Sex on the Beach", price: "25'000" },
+    { id: "19", name: "Strawberry Daiquiri", price: "25'000" },
+    { id: "20", name: "Fresh Jungle", price: "24'000" },
   ],
   Beers: [
     {
@@ -161,6 +169,9 @@ const MenuItems = {
       price: "17'000",
       img: "/images/beers/corona.jpg",
     },
+    { id: "13", name: "Kirin Ichiban", price: "15'000" },
+    { id: "14", name: "Harbin", price: "20'000" },
+    { id: "15", name: "Asahi", price: "15'000" },
   ],
   Tequila: [
     {
@@ -199,6 +210,12 @@ const MenuItems = {
       bottleprice: "290'000",
       img: "/images/whiskey/jack-daniels.jpg",
     },
+    {
+      id: "3",
+      name: "Ballantines 0.75L",
+      price: "23'000",
+      bottleprice: "230'000",
+    },
   ],
   Vodka: [
     {
@@ -215,6 +232,7 @@ const MenuItems = {
       bottleprice: "380'000",
       img: "/images/vodka/grey-goose.jpg",
     },
+    { id: "3", name: "Beluga", price: "24'000", bottleprice: "350'000" },
   ],
   Wine: [
     {
@@ -235,6 +253,9 @@ const MenuItems = {
       price: "95'000",
       img: "/images/wine/maison-castel.jpg",
     },
+    { id: "4", name: "Kindzmarauli", price: "90'000" },
+    { id: "5", name: "Lous Eschenauer", price: "90'000" },
+    { id: "6", name: "Hardys", price: "90'000" },
   ],
 };
 
