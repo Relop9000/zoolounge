@@ -17,7 +17,7 @@ const Menu = () => {
                     <img
                       src={data.image}
                       alt={category}
-                      className="w-16 h-16 rounded-xl object-cover bg-gray-300"
+                      className="w-16 h-16 rounded-xl object-cover bg-inherit"
                     />
                   )}
                   <h2 className="text-2xl font-bold">{category}</h2>
