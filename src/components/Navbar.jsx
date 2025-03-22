@@ -37,13 +37,7 @@ const Navbar = () => {
           ZOOLOUNGE
         </h1>
       </header>
-      <div className="relative mt-10 flex items-center justify-center w-full px-4 py-4">
-        <button
-          onClick={() => handleScroll("left")}
-          className="px-3 py-2 bg-inherit rounded-l-md shadow-md"
-        >
-          ◀
-        </button>
+      <div className="relative mt-10 flex items-center justify-center w-full px-2 py-2">
         <div
           ref={scrollRef}
           className="flex gap-4 overflow-x-auto scrollbar-hide whitespace-nowrap px-2 w-full max-w-4xl"
@@ -53,19 +47,13 @@ const Navbar = () => {
             <a
               key={index}
               href={`#${item.toLowerCase()}`}
-              className="text-white bg-green-600 px-4 py-2 rounded-full shadow-md hover:bg-green-700 transition-all"
+              className="text-white bg-green-600 px-2 py-1 rounded-full shadow-md hover:bg-green-700 transition-all text-sm"
               style={{ scrollSnapAlign: "center" }}
             >
               {item}
             </a>
           ))}
         </div>
-        <button
-          onClick={() => handleScroll("right")}
-          className="px-3 py-2 bg-inherit rounded-r-md shadow-md"
-        >
-          ▶
-        </button>
       </div>
     </div>
   );
