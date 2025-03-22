@@ -1,63 +1,72 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
-import gsap from "gsap";
+import { useRef } from "react";
 
-const navItems = ["Food", "Drinks", "Contact"];
+const navItems = [
+  "Food",
+  "Pizza",
+  "Dessert",
+  "Drinks",
+  "Coffee & Soft Drinks",
+  "Pot tea",
+  "Cocktails",
+  "Beers",
+  "Tequila",
+  "Liqueur",
+  "Whiskey",
+  "Vodka",
+  "Wine",
+];
 
 const Navbar = () => {
-  // const [isNavVisible, setIsNavVisible] = useState(true);
-  // const navContainerRef = useRef(null);
-  // const lastScrollY = useRef(0); // Use ref instead of state to avoid unnecessary renders
+  const scrollRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollY = window.scrollY;
-
-  //     if (currentScrollY > lastScrollY.current) {
-  //       setIsNavVisible(false); // Hide navbar on scroll down
-  //     } else {
-  //       setIsNavVisible(true); // Show navbar on scroll up
-  //     }
-
-  //     lastScrollY.current = currentScrollY; // Update last scroll position
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   if (navContainerRef.current) {
-  //     gsap.to(navContainerRef.current, {
-  //       y: isNavVisible ? 0 : -100,
-  //       opacity: isNavVisible ? 1 : 0,
-  //       duration: 0.3,
-  //       ease: "power2.out",
-  //     });
-  //   }
-  // }, [isNavVisible]);
+  const handleScroll = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = 100;
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
-    <div
-      // ref={navContainerRef}
-      className="relative inset-x-0 top-4 z-50 h-16 border-none transition-all sm:inset-x-6"
-    >
-      <header className="absolute top-1/2 w-full -translate-y-1/2">
-        <nav className="flex size-full items-center justify-between p-4">
-          <h1 className="text-[#04753c] font-bold">ZOOLOUNGE</h1>
-          {navItems.map((item) => (
+    <div className="relative z-50 w-full">
+      <header className="w-full px-4 py-2 bg-inherit shadow-md fixed top-0 left-0 flex justify-between items-center z-50">
+        <h1 className="text-[#04753c] font-bold text-lg sm:text-2xl">
+          ZOOLOUNGE
+        </h1>
+      </header>
+      <div className="relative mt-10 flex items-center justify-center w-full px-4 py-4">
+        <button
+          onClick={() => handleScroll("left")}
+          className="px-3 py-2 bg-inherit rounded-l-md shadow-md"
+        >
+          ◀
+        </button>
+        <div
+          ref={scrollRef}
+          className="flex gap-4 overflow-x-auto scrollbar-hide whitespace-nowrap px-2 w-full max-w-4xl"
+          style={{ scrollSnapType: "x mandatory" }}
+        >
+          {navItems.map((item, index) => (
             <a
-              key={item}
+              key={index}
               href={`#${item.toLowerCase()}`}
-              className="nav-hover-btn"
+              className="text-white bg-green-600 px-4 py-2 rounded-full shadow-md hover:bg-green-700 transition-all"
+              style={{ scrollSnapAlign: "center" }}
             >
               {item}
             </a>
           ))}
-        </nav>
-      </header>
+        </div>
+        <button
+          onClick={() => handleScroll("right")}
+          className="px-3 py-2 bg-inherit rounded-r-md shadow-md"
+        >
+          ▶
+        </button>
+      </div>
     </div>
   );
 };

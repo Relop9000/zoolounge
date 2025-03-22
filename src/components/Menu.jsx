@@ -29,16 +29,13 @@ const Menu = () => {
                       key={item.id}
                       className="bg-green-600 shadow-lg rounded-3xl p-4"
                     >
-                      {item.img ? (
+                      {/* ✅ Only render image if it exists and is not empty */}
+                      {item.img && item.img.trim() && (
                         <img
                           src={item.img}
                           alt={item.name}
-                          className="w-full h-56 rounded-2xl object-cover bg-gray-400"
+                          className="w-full h-96 rounded-2xl object-fill bg-gray-400"
                         />
-                      ) : (
-                        <div className="w-full h-56 rounded-2xl bg-gray-300 flex items-center justify-center">
-                          <span className="text-gray-600">No Image</span>
-                        </div>
                       )}
 
                       <div className="mt-3 text-center">
