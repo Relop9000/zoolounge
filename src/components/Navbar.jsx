@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRef } from "react";
 
 const navItems = [
@@ -33,9 +34,11 @@ const Navbar = () => {
   return (
     <div className="relative z-50 w-full">
       <header className="w-full px-4 py-2 bg-inherit shadow-md fixed top-0 left-0 flex justify-between items-center z-50">
-        <h1 className="text-[#04753c] font-bold text-lg sm:text-2xl">
-          ZOOLOUNGE
-        </h1>
+        <Link href="/">
+          <h1 className="text-[#04753c] font-bold text-lg sm:text-2xl">
+            ZOOLOUNGE
+          </h1>
+        </Link>
       </header>
       <div className="relative mt-10 flex items-center justify-center w-full px-2 py-2">
         <div
