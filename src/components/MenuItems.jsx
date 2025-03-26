@@ -94,6 +94,7 @@ const MenuItems = {
   },
   "": {
     items: [
+      { id: "0", name: "Snack", price: "15'000", img: "" },
       { id: "1", name: "Fried Chicken", price: "30'000", img: "" },
       { id: "2", name: "Meat Collection", price: "129'000", img: "" },
     ],
@@ -130,7 +131,7 @@ const MenuItems = {
     image: "/images/drink.png",
     items: [],
   },
-  "Coffee & Soft Drinks": [
+  Coffee: [
     {
       id: "1",
       name: "Americano",
@@ -163,15 +164,23 @@ const MenuItems = {
     },
     { id: "6", name: "Green Tea Latte", price: "10'500", img: "" },
     { id: "7", name: "Chocolate Milk", price: "8'000", img: "" },
-    { id: "8", name: "Sprite", price: "6'000", img: "" },
-    { id: "9", name: "Coke", price: "6'000", img: "" },
-    { id: "10", name: "Energy drink", price: "6'000", img: "" },
   ],
   Smoothie: [
     { id: "1", name: "Blueberry smoothie", price: "12'000", img: "" },
     { id: "2", name: "Strawberry smoothie", price: "12'000", img: "" },
     { id: "3", name: "Mango smoothie", price: "12'000", img: "" },
     { id: "4", name: "Kiwi smoothie", price: "12'000", img: "" },
+  ],
+  "Soft Drinks": [
+    { id: "1", name: "Sprite", price: "6'000", img: "" },
+    { id: "2", name: "Coca Cola", price: "6'000", img: "" },
+    { id: "3", name: "Fanta", price: "6'000", img: "" },
+    { id: "4", name: "Red Bull Energy drink", price: "6'000", img: "" },
+    { id: "5", name: "Soda Water Schweppes", price: "7'000", img: "" },
+    { id: "6", name: "Tonic Water", price: "7'000", img: "" },
+    { id: "7", name: "Ginger Ale", price: "7'000", img: "" },
+    { id: "8", name: "Bon Aqua Water", price: "3'500", img: "" },
+    { id: "9", name: "Bon Aqua Bubble Water", price: "4'500", img: "" },
   ],
   "Pot tea": [
     {
