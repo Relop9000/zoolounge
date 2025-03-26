@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
   background-color: #012714;
   color: #f8fcfd;
-  font-family: "General Sans", sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 @layer base {

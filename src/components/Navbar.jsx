@@ -4,7 +4,10 @@ import { useRef } from "react";
 
 const navItems = [
   "Food",
+  "Salad",
+  "Pasta",
   "Pizza",
+  "Cream Soup",
   "Dessert",
   "Drinks",
   "Coffee & Soft Drinks",

@@ -2,48 +2,54 @@ import MenuItems from "./MenuItems";
 
 const Menu = () => {
   return (
-    <div className="relative w-screen h-dvh overflow-x-hidden">
-      <div className="absolute left-0 top-0 z-40 size-full">
-        <div className="mt-24 px-5 sm:px-10">
+    <div className="relative w-screen min-h-screen overflow-x-hidden bg-green-950 text-blue-100">
+      <div className="absolute left-0 top-0 z-40 w-full">
+        <div className="mt-20 px-4 sm:px-6">
           {Object.entries(MenuItems).map(([category, data]) => {
             const items = Array.isArray(data) ? data : data.items;
-
             if (!items) return null;
 
             return (
-              <div key={category} id={category.toLowerCase()} className="mb-12">
-                <div className="flex items-center gap-4 mb-4">
+              <div key={category} id={category.toLowerCase()} className="mb-10">
+                <div className="flex items-center gap-3 mb-4">
                   {data.image && !Array.isArray(data) && (
                     <img
                       src={data.image}
                       alt={category}
-                      className="w-16 h-16 rounded-xl object-cover bg-inherit"
+                      className="w-12 h-12 rounded-lg object-cover bg-inherit"
                     />
                   )}
-                  <h2 className="text-2xl font-bold">{category}</h2>
+                  <h2 className="text-xl font-bold ">{category}</h2>
                 </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {items.map((item) => (
                     <div
                       key={item.id}
-                      className="bg-green-600 shadow-lg rounded-3xl p-4"
+                      className="group relative bg-inherit shadow-md rounded-xl overflow-hidden transition-transform transform active:scale-95"
                     >
-                      {/* ✅ Only render image if it exists and is not empty */}
                       {item.img && item.img.trim() && (
-                        <img
-                          src={item.img}
-                          alt={item.name}
-                          className="w-full h-96 rounded-2xl object-fill bg-gray-400"
-                        />
+                        <div className="relative w-full h-32 sm:h-40 overflow-hidden">
+                          <img
+                            src={item.img}
+                            alt={item.name}
+                            className="w-full h-full object-cover rounded-t-xl transition-all duration-300 group-hover:opacity-90"
+                          />
+                        </div>
                       )}
-
-                      <div className="mt-3 text-center">
-                        <h3 className="text-lg font-semibold">{item.name}</h3>
-                        <div className="flex justify-center gap-4 mt-2">
-                          {item.price && <span>{item.price}₮</span>}
+                      <div className="p-2 text-center bg-green-500 text-white rounded-b-xl">
+                        <h3 className="text-sm font-medium sm:text-base">
+                          {item.name}
+                        </h3>
+                        <div className="flex justify-center gap-2 mt-1 text-xs sm:text-sm">
+                          {item.price && (
+                            <span className="bg-white/20 px-2 py-1 rounded-md">
+                              {item.price}₮
+                            </span>
+                          )}
                           {item.bottleprice && (
-                            <span>Bottle: {item.bottleprice}₮</span>
+                            <span className="bg-white/20 px-2 py-1 rounded-md">
+                              Bottle: {item.bottleprice}₮
+                            </span>
                           )}
                         </div>
                       </div>

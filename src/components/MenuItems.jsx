@@ -1,17 +1,42 @@
 const MenuItems = {
   Food: {
     image: "/images/Food.png",
+    items: [],
+  },
+  Salad: {
     items: [
       {
         id: "1",
-        name: "Mixed Meat Platter",
-        price: "129'000",
-        img: "/images/Food/mixed-meat.jpg",
+        name: "Garden Fruit salad",
+        price: "25'000",
+        img: "",
       },
       {
         id: "2",
-        name: "Fried Chicken And French fries",
-        price: "25'000",
+        name: "Smoked Salmon salad",
+        price: "27'900",
+        img: "",
+      },
+    ],
+  },
+  Pasta: {
+    items: [
+      {
+        id: "1",
+        name: "Carbonara pasta",
+        price: "32'000",
+        img: "",
+      },
+      {
+        id: "2",
+        name: "Bolognese pasta",
+        price: "32'000",
+        img: "",
+      },
+      {
+        id: "3",
+        name: "Green Garden pasta",
+        price: "32'000",
         img: "",
       },
     ],
@@ -20,22 +45,57 @@ const MenuItems = {
     items: [
       {
         id: "21",
-        name: "Meat Lovers",
-        price: "39'000",
+        name: "Hawaii pizza",
+        price: "38'000",
         img: "",
       },
       {
         id: "22",
-        name: "BBQ Chicken",
-        price: "35'000",
+        name: "Margherita pizza",
+        price: "38'000",
         img: "",
       },
       {
         id: "23",
-        name: "Hawaii Pizza",
-        price: "35'000",
+        name: "Pepperoni pizza",
+        price: "38'000",
         img: "",
       },
+      {
+        id: "24",
+        name: "Chicken BBQ pizza",
+        price: "38'000",
+        img: "",
+      },
+      {
+        id: "25",
+        name: "Bolognese pizza",
+        price: "38'000",
+        img: "",
+      },
+    ],
+  },
+
+  "Cream Soup": {
+    items: [
+      {
+        id: "21",
+        name: "Broccoli cream soup",
+        price: "38'000",
+        img: "",
+      },
+      {
+        id: "22",
+        name: "Mushroom cream soup",
+        price: "38'000",
+        img: "",
+      },
+    ],
+  },
+  "": {
+    items: [
+      { id: "1", name: "Fried Chicken", price: "30'000", img: "" },
+      { id: "2", name: "Meat Collection", price: "129'000", img: "" },
     ],
   },
   Dessert: {
@@ -178,43 +238,43 @@ const MenuItems = {
       id: "10",
       name: "Heineken",
       price: "15'000",
-      img: "/images/Drinks/Heineken.jpg",
+      img: "",
     },
     {
       id: "11",
       name: "Kaltenberg",
       price: "17'000",
-      img: "/images/Drinks/Kaltenberg.jpg",
+      img: "",
     },
     {
       id: "12",
       name: "Corona Extra",
       price: "17'000",
-      img: "/images/Drinks/Corona.jpg",
+      img: "",
     },
     {
       id: "13",
       name: "Kirin Ichiban",
       price: "15'000",
-      img: "/images/Drinks/Kirin.jpg",
+      img: "",
     },
     {
       id: "14",
       name: "Harbin",
       price: "20'000",
-      img: "/images/Drinks/Harbin.jpg",
+      img: "",
     },
     {
       id: "15",
       name: "Asahi",
       price: "15'000",
-      img: "/images/Drinks/Asahi.jpg",
+      img: "",
     },
     {
       id: "16",
       name: "Asahi dry",
       price: "12'000",
-      img: "/images/Drinks/Asahi-dry.jpg",
+      img: "",
     },
   ],
   Tequila: [
@@ -289,14 +349,14 @@ const MenuItems = {
     {
       id: "2",
       name: "Calvet",
-      price: "90'000",
+      price: "105'000",
       img: "/images/Drinks/Calvet.jpg",
     },
     {
       id: "3",
       name: "Maison Castel",
       price: "95'000",
-      img: "/images/Drinks/castel.jpg",
+      img: "",
     },
     {
       id: "4",
