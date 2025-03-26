@@ -343,7 +343,7 @@ const MenuItems = {
     {
       id: "1",
       name: "Domaine de La Baume",
-      price: "100'000",
+      price: "105'000",
       img: "/images/Drinks/La-baume.jpg",
     },
     {
