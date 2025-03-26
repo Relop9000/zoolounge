@@ -36,7 +36,7 @@ const Menu = () => {
                           />
                         </div>
                       )}
-                      <div className="p-2 text-center bg-green-500 text-white rounded-b-xl">
+                      <div className="p-2 text-center bg-green-600 text-white rounded-b-xl">
                         <h3 className="text-sm font-medium sm:text-base">
                           {item.name}
                         </h3>
