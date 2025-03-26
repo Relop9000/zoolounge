@@ -42,7 +42,7 @@ const Menu = () => {
                         </h3>
                         <div className="flex justify-center gap-2 mt-1 text-xs sm:text-sm">
                           {item.price && (
-                            <span className="bg-white/20 px-2 py-1 rounded-md">
+                            <span className="bg-white/15 px-2 py-1 rounded-md">
                               {item.price}₮
                             </span>
                           )}
