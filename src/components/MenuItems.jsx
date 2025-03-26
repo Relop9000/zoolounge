@@ -81,13 +81,13 @@ const MenuItems = {
       {
         id: "21",
         name: "Broccoli cream soup",
-        price: "38'000",
+        price: "23'900",
         img: "",
       },
       {
         id: "22",
         name: "Mushroom cream soup",
-        price: "38'000",
+        price: "23'900",
         img: "",
       },
     ],
