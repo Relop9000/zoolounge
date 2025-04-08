@@ -4,7 +4,7 @@ const Menu = () => {
   return (
     <div className="relative w-screen min-h-screen overflow-x-hidden bg-green-950 text-blue-100">
       <div className="absolute left-0 top-0 z-40 w-full">
-        <div className="mt-20 px-4 sm:px-6">
+        <div className="mt-24 px-4 sm:px-6">
           {Object.entries(MenuItems).map(([category, data]) => {
             const items = Array.isArray(data) ? data : data.items;
             if (!items) return null;

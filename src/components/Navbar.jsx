@@ -36,8 +36,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative z-50 w-full">
-      <header className="w-full px-4 py-2 bg-inherit shadow-md fixed top-0 left-0 flex justify-between items-center z-50">
+    <div className="z-50 w-full fixed bg-green-950">
+      <header className="w-full px-4 py-2  shadow-md top-0 left-0 flex justify-between items-center z-50">
         <Link href="/">
           <div>
             <div className="text-[#04753c] font-bold text-lg sm:text-2xl flex justify-between">
@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
         </Link>
       </header>
-      <div className="relative mt-10 flex items-center justify-center w-full px-2 py-2">
+      <div className="relative flex items-center justify-center w-full px-2 py-2">
         <div
           ref={scrollRef}
           className="flex gap-4 overflow-x-auto scrollbar-hide whitespace-nowrap px-2 w-full max-w-4xl"
