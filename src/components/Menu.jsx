@@ -2,9 +2,9 @@ import MenuItems from "./MenuItems";
 
 const Menu = () => {
   return (
-    <div className="relative w-screen min-h-screen overflow-x-hidden bg-green-950 text-blue-100">
+    <div className="relative w-screen min-h-screen overflow-x-hidden bg-[url('/Jungle-bg.jpg')] bg-cover bg-center text-blue-100">
       <div className="absolute left-0 top-0 z-40 w-full">
-        <div className="mt-24 px-4 sm:px-6">
+        <div className="mt-20 px-4 sm:px-6">
           {Object.entries(MenuItems).map(([category, data]) => {
             const items = Array.isArray(data) ? data : data.items;
             if (!items) return null;
@@ -25,7 +25,7 @@ const Menu = () => {
                   {items.map((item) => (
                     <div
                       key={item.id}
-                      className="group relative bg-inherit shadow-md rounded-xl overflow-hidden transition-transform transform active:scale-95"
+                      className="group relative bg-inherit rounded-xl overflow-hidden transition-transform transform active:scale-95"
                     >
                       {item.img && item.img.trim() && (
                         <div className="relative w-full h-32 sm:h-40 overflow-hidden">
@@ -36,7 +36,7 @@ const Menu = () => {
                           />
                         </div>
                       )}
-                      <div className="p-2 text-center bg-green-600 text-white rounded-b-xl">
+                      <div className="p-2 text-center underline underline-offset-4 text-white rounded-b-xl">
                         <h3 className="text-sm font-medium sm:text-base">
                           {item.name}
                         </h3>

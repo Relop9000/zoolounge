@@ -25,19 +25,19 @@ const navItems = [
 const Navbar = () => {
   const scrollRef = useRef(null);
 
-  const handleScroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = 100;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
+  // const handleScroll = (direction) => {
+  //   if (scrollRef.current) {
+  //     const scrollAmount = 100;
+  //     scrollRef.current.scrollBy({
+  //       left: direction === "left" ? -scrollAmount : scrollAmount,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
 
   return (
     <div className="z-50 w-full fixed bg-green-950">
-      <header className="w-full px-4 py-2  shadow-md top-0 left-0 flex justify-between items-center z-50">
+      <header className="w-full px-4 py-2 top-0 left-0 flex justify-between items-center z-50">
         <Link href="/">
           <div>
             <div className="text-[#04753c] font-bold text-lg sm:text-2xl flex justify-between">
@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
         </Link>
       </header>
-      <div className="relative flex items-center justify-center w-full px-2 py-2">
+      <div className="relative items-center justify-center w-full px-2 py-2 hidden">
         <div
           ref={scrollRef}
           className="flex gap-4 overflow-x-auto scrollbar-hide whitespace-nowrap px-2 w-full max-w-4xl"
@@ -57,7 +57,7 @@ const Navbar = () => {
             <a
               key={index}
               href={`#${item.toLowerCase()}`}
-              className="text-white bg-green-600 px-2 py-1 rounded-full shadow-md hover:bg-green-700 transition-all text-sm"
+              className="text-white bg-emerald-800 px-2 py-1 rounded-full shadow-md hover:bg-green-700 transition-all text-sm"
               style={{ scrollSnapAlign: "center" }}
             >
               {item}
