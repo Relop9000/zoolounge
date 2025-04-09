@@ -228,9 +228,10 @@ const MenuItems = {
     },
   ],
   Juice: [
-    { id: "1", name: "Apple Juice", price: "5'000", img: "" },
-    { id: "2", name: "Orange Juice", price: "5'000", img: "" },
-    { id: "3", name: "Multi-fruit Juice", price: "5'000", img: "" },
+    { id: "1", name: "Apple Juice", price: "6'900", img: "" },
+    { id: "2", name: "Orange Juice", price: "6'900", img: "" },
+    { id: "3", name: "Peach Juice", price: "6'900", img: "" },
+    { id: "4", name: "Multi-fruit Juice", price: "6'900", img: "" },
   ],
   Cocktails: [
     {
