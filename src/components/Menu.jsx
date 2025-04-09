@@ -19,7 +19,7 @@ const Menu = () => {
                       className="w-12 h-12 rounded-lg object-cover bg-inherit"
                     />
                   )}
-                  <h2 className="text-xl font-bold ">{category}</h2>
+                  <h2 className="text-2xl font-bold ">{category}</h2>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {items.map((item) => (
@@ -36,11 +36,9 @@ const Menu = () => {
                           />
                         </div>
                       )}
-                      <div className="p-2 text-center underline underline-offset-4 text-white rounded-b-xl">
-                        <h3 className="text-sm font-medium sm:text-base">
-                          {item.name}
-                        </h3>
-                        <div className="flex justify-center gap-2 mt-1 text-xs sm:text-sm">
+                      <div className="p-2 text-center underline underline-offset-4 text-white rounded-b-xl ">
+                        <h3 className="text-lg font-medium ">{item.name}</h3>
+                        <div className="flex justify-center gap-2 mt-1 text-base ">
                           {item.price && (
                             <span className="bg-white/15 px-2 py-1 rounded-md">
                               {item.price}₮
