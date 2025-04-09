@@ -28,7 +28,7 @@ const Menu = () => {
                       className="group relative bg-inherit rounded-xl overflow-hidden transition-transform transform active:scale-95"
                     >
                       {item.img && item.img.trim() && (
-                        <div className="relative w-full h-32 sm:h-40 overflow-hidden">
+                        <div className="relative w-full h-32 sm:h-40 overflow-hidden hidden">
                           <img
                             src={item.img}
                             alt={item.name}
