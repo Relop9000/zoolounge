@@ -280,6 +280,12 @@ const MenuItems = {
   ],
   Beers: [
     {
+      id: "9",
+      name: "SanMiguel",
+      price: "14'900",
+      img: "",
+    },
+    {
       id: "10",
       name: "Heineken",
       price: "15'900",
