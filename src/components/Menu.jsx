@@ -5,12 +5,19 @@ const Menu = () => {
     <div className="relative w-screen min-h-screen overflow-x-hidden bg-[url('/Jungle-bg.jpg')] bg-cover bg-center text-blue-100">
       <div className="absolute left-0 top-0 z-40 w-full">
         <div className="mt-20 px-4 sm:px-6">
-          {Object.entries(MenuItems).map(([category, data]) => {
+          {Object.entries(MenuItems).map(([category, data], index, arr) => {
             const items = Array.isArray(data) ? data : data.items;
             if (!items) return null;
 
             return (
-              <div key={category} id={category.toLowerCase()} className="mb-10">
+              <div
+                key={category}
+                id={category.toLowerCase()}
+                className="mb-10 scroll-mt-24"
+              >
+                {index !== 0 && (
+                  <div className="h-1 bg-gradient-to-r from-blue-400/30 via-white/10 to-blue-400/30 rounded-full my-8" />
+                )}
                 <div className="flex items-center gap-3 mb-4">
                   {data.image && !Array.isArray(data) && (
                     <img
