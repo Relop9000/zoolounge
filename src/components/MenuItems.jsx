@@ -313,7 +313,6 @@ const MenuItems = {
     { id: "24", name: "Pina Colada", price: "21'900", img: "" },
     { id: "25", name: "Mocktail", price: "14'900", img: "" },
     { id: "26", name: "Tequila Sunrise", price: "24'900", img: "" },
-    { id: "27", name: "Zoo Special", price: "25'900", img: "" },
   ],
   Beers: [
     {
