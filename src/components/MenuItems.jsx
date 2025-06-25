@@ -7,20 +7,13 @@ const MenuItems = {
     items: [
       {
         id: "1",
-        name: "Garden Fruit salad",
-        price: "25'000",
-        img: "",
-        recipe: "",
-      },
-      {
-        id: "2",
         name: "Smoked Salmon salad",
         price: "27'900",
         img: "",
         recipe: "",
       },
       {
-        id: "3",
+        id: "2",
         name: "Caesar salad",
         price: "27'900",
         img: "",
@@ -191,13 +184,13 @@ const MenuItems = {
     {
       id: "2",
       name: "Cafe Latte",
-      price: "9'500",
+      price: "10'000",
       img: "",
     },
     {
       id: "3",
       name: "Cappucino",
-      price: "9'500",
+      price: "10'000",
       img: "",
     },
     {
@@ -219,7 +212,13 @@ const MenuItems = {
       img: "",
     },
     { id: "7", name: "Green Tea Latte", price: "10'500", img: "" },
-    { id: "8", name: "Chocolate Milk", price: "8'000", img: "" },
+    { id: "8", name: "Bailey's Coffee", price: "20'000", img: "" },
+    { id: "9", name: "Irish Coffee", price: "20'000", img: "" },
+    { id: "10", name: "Orange Espresso", price: "11'900", img: "" },
+    { id: "11", name: "Strawberry Espresso", price: "11'900", img: "" },
+    { id: "12", name: "Tonic Espresso", price: "10'000", img: "" },
+    { id: "12", name: "Hazelnut Latte", price: "10'000", img: "" },
+    { id: "13", name: "Chocolate Milk", price: "8'000", img: "" },
   ],
   Smoothie: [
     { id: "1", name: "Blueberry smoothie", price: "12'000", img: "" },
@@ -235,8 +234,7 @@ const MenuItems = {
     { id: "5", name: "Calpis", price: "6'900", img: "" },
     { id: "6", name: "Soda Schweppes", price: "6'900", img: "" },
     { id: "8", name: "Millena water", price: "6'900", img: "" },
-    { id: "9", name: "Ice tea", price: "11'900", img: "" },
-    { id: "10", name: "Zoo Special tea", price: "16'900", img: "" },
+    { id: "9", name: "Zoo Special tea", price: "16'900", img: "" },
   ],
   "Pot tea": [
     {
@@ -245,16 +243,17 @@ const MenuItems = {
       price: "15'000",
       img: "",
     },
+
     {
       id: "8",
-      name: "Fruit Tea",
+      name: "Earl Grey",
       price: "15'000",
       img: "",
     },
     {
       id: "9",
-      name: "Earl Grey",
-      price: "15'000",
+      name: "Ice Tea",
+      price: "11'900",
       img: "",
     },
   ],
