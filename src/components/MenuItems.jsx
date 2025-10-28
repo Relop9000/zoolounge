@@ -86,33 +86,8 @@ const MenuItems = {
     ],
   },
 
-  "Cream Soup": {
-    items: [
-      {
-        id: "21",
-        name: "Broccoli cream soup",
-        price: "23'900",
-        img: "",
-        recipe: "",
-      },
-      {
-        id: "22",
-        name: "Mushroom cream soup",
-        price: "23'900",
-        img: "",
-        recipe: "",
-      },
-    ],
-  },
   Steak: {
     items: [
-      {
-        id: "1",
-        name: "T-Bone Steak",
-        price: "60'000",
-        img: "",
-        recipe: "",
-      },
       {
         id: "2",
         name: "Pork chop steak",
@@ -131,10 +106,17 @@ const MenuItems = {
   },
   "": {
     items: [
-      { id: "0", name: "Snack", price: "15'000", img: "", recipe: "" },
-      { id: "1", name: "Fried Chicken", price: "30'000", img: "", recipe: "" },
       {
-        id: "2",
+        id: "0",
+        name: "Soup",
+        price: "19'900",
+        img: "",
+        recipe: "",
+      },
+      { id: "1", name: "Snack", price: "15'000", img: "", recipe: "" },
+      { id: "2", name: "Fried Chicken", price: "30'000", img: "", recipe: "" },
+      {
+        id: "3",
         name: "Meat Collection",
         price: "129'000",
         img: "",
@@ -414,6 +396,13 @@ const MenuItems = {
       bottleprice: "259'900",
       img: "",
     },
+    {
+      id: "17",
+      name: "Żubrówka-Gin Białowieski",
+      price: "",
+      bottleprice: "37.5% 0.7L 199'000",
+      img: "",
+    },
   ],
   Liquor: [
     {
@@ -478,6 +467,13 @@ const MenuItems = {
       img: "",
     },
     { id: "3", name: "Beluga", price: "37'900", bottleprice: "479'900" },
+    { id: "4", name: "Żubrówka-Bison", price: "", bottleprice: "0.7L 159'900" },
+    {
+      id: "5",
+      name: "Żubrówka-Biala",
+      price: "",
+      bottleprice: "37.5% 0.7L 139'000",
+    },
   ],
   Wine: [
     {
