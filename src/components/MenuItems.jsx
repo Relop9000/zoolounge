@@ -261,13 +261,13 @@ const MenuItems = {
       id: "15",
       name: "Espresso Martini",
       price: "27'900",
-      img: "/images/Drinks/espresso-martini.jpg",
+      img: "/images/Drinks/Espresso-Martini.jpg",
     },
     {
       id: "16",
       name: "Mojito",
       price: "26'900",
-      img: "",
+      img: "/images/Drinks/Mojito.jpg",
     },
     {
       id: "17",
@@ -357,7 +357,7 @@ const MenuItems = {
       name: "Sierrai tequila",
       price: "50ml 18'900",
       bottleprice: "249'900",
-      img: "",
+      img: "SierraBlangd",
     },
     {
       id: "15",
@@ -434,7 +434,7 @@ const MenuItems = {
       name: "Jack Daniels",
       price: "50ml 25'000",
       bottleprice: "0.7L 329'900, 1L 419'900",
-      img: "/images/Drinks/JackDaniel.jpg",
+      img: "/images/Drinks/JackDaniels.jpg",
     },
     {
       id: "3",
@@ -448,7 +448,7 @@ const MenuItems = {
       name: "Ballantines",
       price: "50ml 28'900",
       bottleprice: "249'900",
-      img: "",
+      img: "/images/Drinks/Ballantines.jpg",
     },
   ],
   Vodka: [
@@ -466,7 +466,13 @@ const MenuItems = {
       bottleprice: "469'900",
       img: "/images/Drinks/Greygoose.jpg",
     },
-    { id: "3", name: "Beluga", price: "37'900", bottleprice: "479'900" },
+    {
+      id: "3",
+      name: "Beluga",
+      price: "37'900",
+      bottleprice: "479'900",
+      img: "/images/Drinks/Beluga.jpg",
+    },
     {
       id: "4",
       name: "Żubrówka-Bison",
@@ -487,13 +493,13 @@ const MenuItems = {
       id: "1",
       name: "Domaine de La Baume",
       price: "129'000",
-      img: "/images/Drinks/La-baume.jpg",
+      img: "",
     },
     {
       id: "2",
       name: "Calvet",
       price: "129'000",
-      img: "/images/Drinks/Calvet.jpg",
+      img: "",
     },
     {
       id: "3",
@@ -505,7 +511,7 @@ const MenuItems = {
       id: "4",
       name: "Kindzmarauli",
       price: "119'000",
-      img: "/images/Drinks/Kindzmarauli.jpg",
+      img: "",
     },
     { id: "5", name: "Lous Eschenauer", price: "90'000" },
     { id: "6", name: "Hardys", price: "90'000" },
