@@ -38,6 +38,7 @@ const categoryGroups = {
       "Smoothie",
       "Soft Drinks",
       "Pot tea",
+      "Shake",
       "Juice",
       "Cocktails",
       "Beers",
@@ -63,6 +64,7 @@ const categoryIcons = {
   Smoothie: Coffee,
   "Soft Drinks": Coffee,
   "Pot tea": Coffee,
+  Shake: Coffee,
   Juice: Coffee,
   Cocktails: Martini,
   Beers: Beer,
@@ -81,6 +83,9 @@ const Menu = () => {
   const [selectedGroup, setSelectedGroup] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Ad configuration - add image URL here to show the ad
+  const adImage = "/images/Event/Birthday.jpg"; // Add image URL like "/images/special-event.jpg" to show ad
 
   const handleGroupSelect = (group) => {
     setSelectedGroup(group);
@@ -123,7 +128,7 @@ const Menu = () => {
           <div className="flex justify-between items-center h-16">
             <button
               onClick={handleBackToHome}
-              className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 hover:opacity-80 transition-opacity cursor-pointer"
+              className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-800 to-green-500 hover:opacity-80 transition-opacity cursor-pointer"
             >
               ZooLounge
             </button>
@@ -142,7 +147,7 @@ const Menu = () => {
                       onClick={() => handleCategorySelect(category)}
                       className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all whitespace-nowrap ${
                         selectedCategory === category
-                          ? "bg-green-500 text-white shadow-lg"
+                          ? "bg-amber-500 text-white shadow-lg"
                           : "bg-slate-800 text-slate-300 hover:bg-slate-700"
                       }`}
                     >
@@ -185,7 +190,7 @@ const Menu = () => {
                     onClick={() => handleCategorySelect(category)}
                     className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                       selectedCategory === category
-                        ? "bg-green-500 text-white"
+                        ? "bg-amber-500 text-white"
                         : "bg-slate-800 text-slate-300"
                     }`}
                   >
@@ -201,6 +206,17 @@ const Menu = () => {
 
       {/* Content */}
       <div className="pt-20 px-4 sm:px-6 max-w-7xl mx-auto pb-12">
+        {/* Special Event Ad Banner */}
+        {adImage && (
+          <div className="mb-8 rounded-xl overflow-hidden shadow-2xl">
+            <img
+              src={adImage}
+              alt="Special Event"
+              className="w-full h-auto max-h-96 object-contain"
+            />
+          </div>
+        )}
+
         {/* Back Button */}
         {(selectedGroup || selectedCategory) && (
           <button
@@ -229,7 +245,7 @@ const Menu = () => {
                   <button
                     key={groupName}
                     onClick={() => handleGroupSelect(groupName)}
-                    className="flex flex-col items-center gap-4 p-8 bg-slate-800/50 hover:bg-slate-800 rounded-xl transition-all hover:scale-105 border-2 border-slate-700 hover:border-green-500"
+                    className="flex flex-col items-center gap-4 p-8 bg-slate-800/50 hover:bg-slate-800 rounded-xl transition-all hover:scale-105 border-2 border-slate-700 hover:border-amber-500"
                   >
                     <GroupIcon size={48} className="text-green-400" />
                     <span className="text-white font-bold text-xl">
@@ -251,6 +267,7 @@ const Menu = () => {
             <h2 className="text-3xl font-bold text-white mb-4">
               {selectedGroup}
             </h2>
+            <p className="text-slate-400 text-lg mb-8">Select a category</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl">
               {categoryGroups[selectedGroup].subcategories.map((category) => {
                 const Icon = categoryIcons[category] || UtensilsCrossed;
@@ -293,14 +310,14 @@ const Menu = () => {
               {getItemsForCategory(selectedCategory).map((item) => (
                 <div
                   key={item.id}
-                  className="group bg-slate-800/50 backdrop-blur rounded-xl overflow-hidden hover:shadow-xl hover:shadow-green-500/20 transition-all hover:scale-105"
+                  className="group bg-slate-800/50 backdrop-blur rounded-xl overflow-hidden hover:shadow-xl hover:shadow-amber-500/20 transition-all hover:scale-105"
                 >
                   {item.img && item.img.trim() && (
-                    <div className="relative w-full h-64 overflow-hidden bg-slate-700">
+                    <div className="relative w-full h-48 overflow-hidden bg-slate-700">
                       <img
                         src={item.img}
                         alt={item.name}
-                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
                           e.target.style.display = "none";
                         }}
@@ -313,12 +330,12 @@ const Menu = () => {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {item.price && (
-                        <span className="px-3 py-1 bg-amber-500/20 text-green-400 rounded-lg font-semibold">
+                        <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-lg font-semibold">
                           {item.price}₮
                         </span>
                       )}
                       {item.bottleprice && (
-                        <span className="px-3 py-1 bg-amber-500/10 text-green-300 rounded-lg text-sm">
+                        <span className="px-3 py-1 bg-amber-500/10 text-amber-300 rounded-lg text-sm">
                           Bottle: {item.bottleprice}₮
                         </span>
                       )}

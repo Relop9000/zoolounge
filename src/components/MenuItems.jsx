@@ -92,14 +92,14 @@ const MenuItems = {
         id: "2",
         name: "Pork chop steak",
         price: "48'000",
-        img: "",
+        img: "/images/Food/Porkchop.jpg",
         recipe: "",
       },
       {
         id: "3",
-        name: "Tenderloin steak",
+        name: "Beef Tenderloin steak",
         price: "55'000",
-        img: "",
+        img: "/images/Food/BeefSteak.jpg",
         recipe: "",
       },
     ],
@@ -239,6 +239,10 @@ const MenuItems = {
       img: "",
     },
   ],
+  Shake: [
+    { id: "1", name: "Strawberry Shake", price: "12'000", img: "" },
+    { id: "2", name: "Chocolate Shake", price: "12'000", img: "" },
+  ],
   Juice: [
     { id: "1", name: "Apple Juice", price: "6'900", img: "" },
     { id: "2", name: "Peach Juice", price: "6'900", img: "" },
@@ -357,7 +361,7 @@ const MenuItems = {
       name: "Sierrai tequila",
       price: "50ml 18'900",
       bottleprice: "249'900",
-      img: "SierraBlangd",
+      img: "/images/Drinks/SierraBlangd.jpg",
     },
     {
       id: "15",
