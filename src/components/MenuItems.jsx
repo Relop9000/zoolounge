@@ -104,7 +104,7 @@ const MenuItems = {
       },
     ],
   },
-  "": {
+  "Other Foods": {
     items: [
       {
         id: "0",
@@ -357,21 +357,21 @@ const MenuItems = {
       name: "Sierrai tequila",
       price: "50ml 18'900",
       bottleprice: "249'900",
-      img: "/images/Drinks/Sierra.jpg",
+      img: "",
     },
     {
       id: "15",
       name: "Olmeca tequila",
       price: "50ml 22'000",
       bottleprice: "249'900",
-      img: "",
+      img: "/images/Drinks/Olmeca.jpg",
     },
     {
       id: "16",
       name: "1800 tequila",
       price: "20'900",
       bottleprice: "299'900",
-      img: "",
+      img: "/images/Drinks/1800.jpg",
     },
   ],
   Gin: [
@@ -380,7 +380,7 @@ const MenuItems = {
       name: "Gordon's",
       price: "17'000",
       bottleprice: "239'900",
-      img: "/images/Drinks/Baileys.jpg",
+      img: "",
     },
     {
       id: "15",
@@ -394,14 +394,14 @@ const MenuItems = {
       name: "Bombay Sapphire",
       price: "20'900",
       bottleprice: "259'900",
-      img: "",
+      img: "/images/Drinks/BombaySapphire.jpg",
     },
     {
       id: "17",
       name: "Żubrówka-Gin Białowieski",
       price: "",
       bottleprice: "37.5% 0.7L 199'000",
-      img: "",
+      img: "/images/Drinks/Gin.jpg",
     },
   ],
   Liquor: [
@@ -410,7 +410,7 @@ const MenuItems = {
       name: "Bailey's Irish Cream",
       price: "19'900",
       bottleprice: "0.7L 199'900",
-      img: "/images/Drinks/Baileys.jpg",
+      img: "",
     },
     {
       id: "15",
@@ -434,7 +434,7 @@ const MenuItems = {
       name: "Jack Daniels",
       price: "50ml 25'000",
       bottleprice: "0.7L 329'900, 1L 419'900",
-      img: "/images/Drinks/Jack-Daniel.jpg",
+      img: "/images/Drinks/JackDaniel.jpg",
     },
     {
       id: "3",
@@ -448,7 +448,7 @@ const MenuItems = {
       name: "Ballantines",
       price: "50ml 28'900",
       bottleprice: "249'900",
-      img: "/images/Drinks/Ballantines.jpg",
+      img: "",
     },
   ],
   Vodka: [
@@ -464,15 +464,22 @@ const MenuItems = {
       name: "Grey Goose",
       price: "35'900",
       bottleprice: "469'900",
-      img: "",
+      img: "/images/Drinks/Greygoose.jpg",
     },
     { id: "3", name: "Beluga", price: "37'900", bottleprice: "479'900" },
-    { id: "4", name: "Żubrówka-Bison", price: "", bottleprice: "0.7L 159'900" },
+    {
+      id: "4",
+      name: "Żubrówka-Bison",
+      price: "",
+      bottleprice: "0.7L 159'900",
+      img: "/images/Drinks/BisonGrassZubrowka.jpg",
+    },
     {
       id: "5",
       name: "Żubrówka-Biala",
       price: "",
       bottleprice: "37.5% 0.7L 139'000",
+      img: "/images/Drinks/BialaZubrowka.jpg",
     },
   ],
   Wine: [
@@ -502,6 +509,32 @@ const MenuItems = {
     },
     { id: "5", name: "Lous Eschenauer", price: "90'000" },
     { id: "6", name: "Hardys", price: "90'000" },
+  ],
+  "Special Days": [
+    {
+      id: "1",
+      name: "Friend's Set",
+      price: "95'900",
+      img: "/images/Specials/FriendsSet.jpg",
+    },
+    {
+      id: "2",
+      name: "Monday & Tuesday",
+      price: "64'900",
+      img: "/images/Specials/MondayTuesday.jpg",
+    },
+    {
+      id: "3",
+      name: "Girls Night Wednesday",
+      price: "",
+      img: "/images/Specials/WednesdayGirlsNight.jpg",
+    },
+    {
+      id: "4",
+      name: "Weekend",
+      price: "99'900",
+      img: "/images/Specials/Weekend.jpg",
+    },
   ],
 };
 
