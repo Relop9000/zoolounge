@@ -216,7 +216,12 @@ const MenuItems = {
     { id: "5", name: "Calpis", price: "6'900", img: "" },
     { id: "6", name: "Soda Schweppes", price: "6'900", img: "" },
     { id: "8", name: "Millena water", price: "6'900", img: "" },
-    { id: "9", name: "Zoo Special tea", price: "16'900", img: "" },
+    {
+      id: "9",
+      name: "Ice Tea",
+      price: "11'900",
+      img: "",
+    },
   ],
   "Pot tea": [
     {
@@ -232,12 +237,7 @@ const MenuItems = {
       price: "15'000",
       img: "",
     },
-    {
-      id: "9",
-      name: "Ice Tea",
-      price: "11'900",
-      img: "",
-    },
+    { id: "9", name: "Zoo Special tea", price: "16'900", img: "" },
   ],
   Shake: [
     { id: "1", name: "Strawberry Shake", price: "12'000", img: "" },

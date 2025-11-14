@@ -147,7 +147,7 @@ const Menu = () => {
                       onClick={() => handleCategorySelect(category)}
                       className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all whitespace-nowrap ${
                         selectedCategory === category
-                          ? "bg-amber-500 text-white shadow-lg"
+                          ? "bg-green-500 text-white shadow-lg"
                           : "bg-slate-800 text-slate-300 hover:bg-slate-700"
                       }`}
                     >
@@ -190,7 +190,7 @@ const Menu = () => {
                     onClick={() => handleCategorySelect(category)}
                     className={`w-full flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                       selectedCategory === category
-                        ? "bg-amber-500 text-white"
+                        ? "bg-green-500 text-white"
                         : "bg-slate-800 text-slate-300"
                     }`}
                   >
@@ -294,7 +294,7 @@ const Menu = () => {
           <div id={selectedCategory.toLowerCase()} className="scroll-mt-20">
             <div className="flex items-center gap-4 mb-8">
               {categoryIcons[selectedCategory] && (
-                <div className="p-3 bg-amber-500/20 rounded-xl">
+                <div className="p-3 bg-green-500/20 rounded-xl">
                   {(() => {
                     const Icon = categoryIcons[selectedCategory];
                     return <Icon size={32} className="text-green-400" />;
@@ -310,7 +310,7 @@ const Menu = () => {
               {getItemsForCategory(selectedCategory).map((item) => (
                 <div
                   key={item.id}
-                  className="group bg-slate-800/50 backdrop-blur rounded-xl overflow-hidden hover:shadow-xl hover:shadow-amber-500/20 transition-all hover:scale-105"
+                  className="group bg-slate-800/50 backdrop-blur rounded-xl overflow-hidden hover:shadow-xl hover:shadow-green-500/20 transition-all hover:scale-105"
                 >
                   {item.img && item.img.trim() && (
                     <div className="relative w-full h-48 overflow-hidden bg-slate-700">
@@ -330,12 +330,12 @@ const Menu = () => {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {item.price && (
-                        <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-lg font-semibold">
+                        <span className="px-3 py-1 bg-amber-500/20 text-green-400 rounded-lg font-semibold">
                           {item.price}₮
                         </span>
                       )}
                       {item.bottleprice && (
-                        <span className="px-3 py-1 bg-amber-500/10 text-amber-300 rounded-lg text-sm">
+                        <span className="px-3 py-1 bg-amber-500/10 text-green-300 rounded-lg text-sm">
                           Bottle: {item.bottleprice}₮
                         </span>
                       )}
