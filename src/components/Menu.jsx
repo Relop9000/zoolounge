@@ -245,7 +245,7 @@ const Menu = () => {
                   <button
                     key={groupName}
                     onClick={() => handleGroupSelect(groupName)}
-                    className="flex flex-col items-center gap-4 p-8 bg-slate-800/50 hover:bg-slate-800 rounded-xl transition-all hover:scale-105 border-2 border-slate-700 hover:border-amber-500"
+                    className="flex flex-col items-center gap-4 p-8 bg-slate-800/50 hover:bg-slate-800 rounded-xl transition-all hover:scale-105 border-2 border-slate-700 hover:border-green-500"
                   >
                     <GroupIcon size={48} className="text-green-400" />
                     <span className="text-white font-bold text-xl">
