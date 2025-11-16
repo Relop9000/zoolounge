@@ -524,7 +524,7 @@ const MenuItems = {
     {
       id: "1",
       name: "Friend's Set",
-      price: "95'900",
+      price: "99'900",
       img: "/images/Specials/FriendsSet.jpg",
     },
     {
@@ -542,7 +542,7 @@ const MenuItems = {
     {
       id: "4",
       name: "Weekend",
-      price: "99'900",
+      price: "109'900",
       img: "/images/Specials/Weekend.jpg",
     },
   ],
